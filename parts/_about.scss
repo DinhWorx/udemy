@@ -1,0 +1,15 @@
+
+.aboutus{
+    padding-top: 100px;
+    padding-bottom:100px;
+    .aboutus-image{
+        border-radius:50%;
+        border: 5px solid $section-color-alternate;
+    }
+    @include media-breakpoint-up(md){
+        .aboutus-list{
+            background: linear-gradient(to right,white 0%, white 49.5%, $section-color-alternate 49.5%,$section-color-alternate 50.5%,white 50.5%, white 100%);/*Mittellinie*/
+        }
+    }
+}
+//_ vor dem namen damit live compiler das nicht in cs umwandelt

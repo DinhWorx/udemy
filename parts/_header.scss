@@ -1,0 +1,38 @@
+.page-header{
+    background-image: url("../images/header-bg.jpg");
+    background-size:cover; /*passt größe an*/
+    background-repeat:no-repeat;
+    background-position: 50% 0%; /*50% - mittig horizontal, 100% vertikales ende soll immer zusehen sein*/
+}
+.navbar-dark .navbar-brand{
+    padding-top: 0.15rem;
+    color: $primary;
+    font-style:italic;
+}
+.header-jumbotron{
+    background-color: transparent;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    /* das ganze soll über flexbox gesteuert werden*/
+    height:$header-jumbotron-height;
+
+    @include media-breakpoint-up(sm){
+        height:$header-jumbotron-height +50px;
+    }
+    @include media-breakpoint-up(md){
+        height:$header-jumbotron-height +100px;
+    }
+    @include media-breakpoint-up(lg){
+        height:$header-jumbotron-height +150px;
+    }
+    h5{
+        font-style:italic;
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    h4{
+        margin-bottom:30px;
+    }
+}
